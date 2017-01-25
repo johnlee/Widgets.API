@@ -130,7 +130,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -170,7 +169,22 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ModelFactory.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\ProductType.cs" />
+    <Compile Include="Models\PurchaseOrder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\DataModels\Category.cs" />
+    <Compile Include="Repository\DataModels\Order.cs" />
+    <Compile Include="Repository\DataModels\User.cs" />
+    <Compile Include="Repository\DataModels\Widget.cs" />
+    <Compile Include="Repository\IOrderRepository.cs" />
+    <Compile Include="Repository\IRepository.cs" />
+    <Compile Include="Repository\IWidgetRepository.cs" />
+    <Compile Include="Repository\MockData\MockData.cs" />
+    <Compile Include="Repository\MockData\MockOrderRepository.cs" />
+    <Compile Include="Repository\MockData\MockRepository.cs" />
+    <Compile Include="Repository\MockData\MockWidgetRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
